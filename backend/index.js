@@ -3,15 +3,15 @@ const fs = require('fs');
 
 const server = express();
 server.use(express.json());
-server.use(cors());
-const PORT = 8000;
+// server.use(cors());
+// const PORT = 8000;
 
 server.post('/',(req,res) => {
     const body = req.body;
     console.log('body: ', body);
     fs.readFile('./todos.json', (err, data) => {
         const db = JSON.parse(data);
-        data.todos.push(req.body)
+        db.todos.push(req.body)
         console.log('data: ', db.todos)
         // db.todos.push(req.body)
 
