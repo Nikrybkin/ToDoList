@@ -1,7 +1,6 @@
 {
   "name": "todolist",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node backend/index.js"
@@ -11,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikrybkin/ToDoList.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nikrybkin/ToDoList/issues"
+  },
+  "homepage": "https://github.com/Nikrybkin/ToDoList#readme",
+  "description": ""
 }

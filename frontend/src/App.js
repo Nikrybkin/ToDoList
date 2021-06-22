@@ -21,7 +21,6 @@ const App = () => {
     }, [])
 
     return (
-        // !editTodo ? "loading.." : todos
         <div className="container">
             <div className="app-wrapper">
                 <div>
