@@ -11,7 +11,7 @@ server.post('/',(req,res) => {
     console.log('body: ', body);
     fs.readFile('./todos.json', (err, data) => {
         const db = JSON.parse(data);
-        data.todo.push(req.body)
+        data.todos.push(req.body)
         console.log('data: ', db.todos)
         // db.todos.push(req.body)
 
